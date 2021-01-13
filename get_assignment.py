@@ -2,6 +2,8 @@
 import sys
 import os
 
+os.system("cp classroom.yml .github/workflows/classroom.yml")
+
 student_repo_path="../csc-369-student/"
 if os.path.isdir(student_repo_path):
     print("Updating %s"%student_repo_path)
