@@ -56,8 +56,8 @@ if subdir is not None:
         print("File already exists. Rename it and run this program again if you want a fresh copy.")
         exit(1)
 
-    print("Copying %s.ipynb"%name)
-    cmd = "cp %s%s/%s.ipynb ."%(student_repo_path,subdir,name)
+    print("Copying %s*"%name)
+    cmd = "cp %s%s/%s* ."%(student_repo_path,subdir,name)
     r = os.system(cmd)
     if r != 0:
         print("Command failed:",cmd)
